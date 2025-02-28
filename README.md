@@ -18,7 +18,7 @@ Example configuration given:
 - RS485 - UART TTL module
 - DC-DC 12V/5V module
 - don't forget to set dip-switch on plate to any appliable address (not 0000, any other)
-- change the GPIO assignments in the configuration file to suit your needs and capabilities of your ESP controller
+- change the GPIO assignments for rx_pin and tx_pin in the configuration file to suit your needs and capabilities of your ESP controller
   
 ## Connection:
 - DC-DC 12V side connect to the 12V pins and ground in the COM-BMS connector on the machine board, 5V side - to the 5V pins and ground of the ESP controller. Observe the polarity of course.
