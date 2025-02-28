@@ -71,6 +71,7 @@ select:
     optionsmap:
       "On": 0xAA
       "Off": 0x55
+    use_write_multiple: true
   - platform: modbus_controller
     modbus_controller_id: gree
     name: "Gree Fan speed"
@@ -81,6 +82,7 @@ select:
       "Low": 0
       "Medium": 1
       "High": 2
+    use_write_multiple: true
   - platform: modbus_controller
     modbus_controller_id: gree
     name: "Gree Mode"
@@ -91,3 +93,4 @@ select:
       "Auto": 0
       "Bypass": 1
       "Heat Exchange": 2
+    use_write_multiple: true
