@@ -3,6 +3,7 @@
 ## Descrition
 
 Adaptation of the [https://github.com/kodr5555/gree-fhbq](https://github.com/kodr5555/gree-fhbq) project for Gree FHBQ-D8-K
+
 You can manage the following settings
 - on/off
 - fan speed
