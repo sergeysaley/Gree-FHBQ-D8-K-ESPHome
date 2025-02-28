@@ -1,6 +1,6 @@
 # GREE FHBQ-D8-K: HVAC control, ESPHome
 
-## Descrition
+## Description
 
 Adaptation of the [https://github.com/kodr5555/gree-fhbq](https://github.com/kodr5555/gree-fhbq) project for Gree FHBQ-D8-K
 
