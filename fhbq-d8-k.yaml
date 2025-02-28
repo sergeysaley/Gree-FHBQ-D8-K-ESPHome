@@ -64,19 +64,16 @@ modbus_controller:
 select:
   - platform: modbus_controller
     modbus_controller_id: gree
-    id: state
-    name: "State"
+    name: "Gree State"
     address: 4
     value_type: U_WORD
     icon: "mdi:power"
     optionsmap:
-      "On": 170
-      "Off": 85
-    use_write_multiple: true
+      "On": 0xAA
+      "Off": 0x55
   - platform: modbus_controller
     modbus_controller_id: gree
-    id: fan
-    name: "Fan speed"
+    name: "Gree Fan speed"
     address: 8
     value_type: U_WORD
     icon: "mdi:fan"
@@ -84,10 +81,9 @@ select:
       "Low": 0
       "Medium": 1
       "High": 2
-    use_write_multiple: true
   - platform: modbus_controller
     modbus_controller_id: gree
-    name: "Mode"
+    name: "Gree Mode"
     address: 5
     value_type: U_WORD
     icon: "mdi:hvac"
@@ -95,4 +91,3 @@ select:
       "Auto": 0
       "Bypass": 1
       "Heat Exchange": 2
-    use_write_multiple: true
