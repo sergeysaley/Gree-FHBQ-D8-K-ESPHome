@@ -40,6 +40,23 @@ web_server:
 switch:
   - platform: restart
     name: "${device_name} restart"
+  - platform: template
+    name: "Gree state"
+    icon: "mdi:power"
+    lambda: |-
+      if (id(state).state == "On") {
+        return true;
+      } else {
+        return false;
+      }
+    turn_on_action:
+      - select.set: 
+          id: state
+          option: "On"
+    turn_off_action:
+      - select.set: 
+          id: state
+          option: "Off"
 
 uart:
   id: mod_bus
@@ -64,14 +81,13 @@ modbus_controller:
 select:
   - platform: modbus_controller
     modbus_controller_id: gree
-    name: "Gree State"
     address: 4
     value_type: U_WORD
-    icon: "mdi:power"
     optionsmap:
       "On": 0xAA
       "Off": 0x55
     use_write_multiple: true
+    internal: True
   - platform: modbus_controller
     modbus_controller_id: gree
     name: "Gree Fan speed"
