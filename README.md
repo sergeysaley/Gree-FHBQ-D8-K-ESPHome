@@ -21,7 +21,7 @@ Example configuration given:
 - change the GPIO assignments for rx_pin and tx_pin in the configuration file to suit your needs and capabilities of your ESP controller
   
 ## Connection:
-- DC-DC 12V side connect to the 12V and ground pins in the COM-BMS connector on the machine board, 5V side - to the 5V pins and ground of the ESP controller. Observe the polarity of course.
-- RS485 board - UART TTL connect to ESP (+, gnd, rx, tx) and to pins A, B of the COM-BMS connector
+- DC-DC 12V side connect to the 12V and ground pins of the COM-BMS connector on the machine board, 5V side - to the 5V pins and ground of the ESP controller. Observe the polarity of course.
+- RS485 board - UART TTL connect to ESP (+, gnd, rx, tx) and to A, B pins of the COM-BMS connector
    
 Thanks to the [author of https://github.com/kodr5555/gree-fhb](https://github.com/kodr5555), who showed exactly where to connect for control (I spent a lot of time trying to find at least some technical documentation on my ventilation, researching the possibility of control via COM-UNION and COM-MANUAL)
